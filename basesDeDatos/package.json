@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp hello",
     "test": "mocha",
     "test:watch": "mocha --watch --reporter min",
     "test:debug":
