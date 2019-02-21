@@ -3,22 +3,21 @@ p2-t1-testing-alu0100836400 created by GitHub Classroom
 
 Instalamos mocha y chai
 
-imagen1
-![webdesplegada](web.PNG)
+![mochachai](1install-mocha-chai.PNG)
 Actualizamos package.json
 
-imagen2
+![catPackage](2catPackage.PNG)
 
 Creamos directorios y los archivos parse y test
 Desarrollamos el código siguiendo BDD
 
-imagen3
-imagen4
+![catParseRdf](3catParseRdf.PNG)
+![pruebas](4pruebas.PNG)
 
 Usando inspect
 
-imagen5
+![inspect](5inspect.PNG)
 
 Integración continua con Travis
 
-imagen6
+![travis](6travis.PNG)
