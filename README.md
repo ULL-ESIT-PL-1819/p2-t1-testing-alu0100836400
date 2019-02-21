@@ -4,7 +4,7 @@ p2-t1-testing-alu0100836400 created by GitHub Classroom
 Instalamos mocha y chai
 
 imagen1
-
+![webdesplegada](web.PNG)
 Actualizamos package.json
 
 imagen2
