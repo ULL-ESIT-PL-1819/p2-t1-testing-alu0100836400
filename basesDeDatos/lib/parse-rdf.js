@@ -7,8 +7,17 @@ module.exports = rdf => {
 	book.id = +$('pgterms\\:ebook').attr('rdf:about').replace('ebooks/','');
 	book.title = $('dcterms\\:title').text();
 	book.authors = $('pgterms\\:agent pgterms\\:name').toArray().map(elem => $(elem).text());
-	book.subjects = $('[rdf\\:resource$="/LCSH"]').parent().find('rdf\\:value').toArray().map(elem => $(elem).text()
+	book.subjects = $('[rdf\\:resource$="/LCSH"]').parent().find('rdf\\:value').toArray().map(elem => $(elem).text());
 	book.lcc = $('[rdf\\:resource$="/LCC"]').parent().find('rdf\\:value').text();
-);
+
+	book.authors = $('pgterms\\:agent').toArray().map((elem) => { // reto clase
+        	let value = {};
+        	value.name = $(elem).find("pgterms\\:name").text();
+        	value.webpage = $(elem).find("pgterms\\:webpage").toArray().map((elem) =>{
+            		let value = $(elem).attr("rdf:resource");
+            		return value;
+        	});
+        	return value;
+    	});
 	return book;
 };
