@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/luis-fuentes/blog.svg?branch=master)](https://travis-ci.org/luis-fuentes/blog)
 # p2-t1-testing-alu0100836400
 p2-t1-testing-alu0100836400 created by GitHub Classroom
 
